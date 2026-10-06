@@ -14,4 +14,7 @@ Singleton {
     readonly property color sand: "#e0b872"
     readonly property string font: "Inter"
     readonly property string icons: "JetBrainsMono Nerd Font"
+    // panel toggles (Super+T / Super+D / Super+H, fake fullscreen)
+    property bool barShown: true
+    property bool dockShown: true
 }

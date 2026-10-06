@@ -92,6 +92,22 @@ hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"), { locked = true, repeating = true })
 hl.bind("XF86AudioMute",        hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"), { locked = true })
 
+-- panels: hide the top bar, the dock, or both
+hl.bind(mod .. " + T", hl.dsp.exec_cmd("qs ipc call panels bar"))
+hl.bind(mod .. " + D", hl.dsp.exec_cmd("qs ipc call panels dock"))
+hl.bind(mod .. " + H", hl.dsp.exec_cmd("qs ipc call panels both"))
+
+-- fake fullscreen: keep the top bar, drop the dock, windows edge to edge
+local focusMode = false
+hl.bind(mod .. " + SHIFT + F", function()
+    focusMode = not focusMode
+    hl.config({
+        general = { gaps_in = focusMode and 0 or 6, gaps_out = focusMode and 0 or 14 },
+        decoration = { rounding = focusMode and 0 or 14 },
+    })
+    hl.exec_cmd("qs ipc call panels setDock " .. (focusMode and "false" or "true"))
+end)
+
 -- cursor
 hl.env("XCURSOR_THEME", "Bibata-Modern-Amber")
 hl.on("hyprland.start", function() hl.exec_cmd("hyprctl setcursor Bibata-Modern-Amber 24") end)

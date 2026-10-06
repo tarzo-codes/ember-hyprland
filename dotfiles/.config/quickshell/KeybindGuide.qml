@@ -29,6 +29,9 @@ PanelWindow {
             ["Super  J", "flip split"], ["Super  Arrows", "move focus"], ["Super  Drag", "move / resize"] ] },
         { title: "Workspaces", keys: [
             ["Super  1-9", "go to workspace"], ["Super Shift  1-9", "send window"] ] },
+        { title: "Layout", keys: [
+            ["Super  T", "top bar on / off"], ["Super  D", "dock on / off"],
+            ["Super  H", "both on / off"], ["Super Shift  F", "fake fullscreen"] ] },
         { title: "System", keys: [
             ["Super  /", "this guide"], ["Volume keys", "volume"], ["Super  M", "leave Hyprland"] ] }
     ]

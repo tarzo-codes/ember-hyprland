@@ -11,6 +11,7 @@ Everything in it was written for Hyprland 0.56 and its new **Lua** config.
 | ![keybind guide](screenshots/keybinds.png) | ![launcher](screenshots/launcher.png) |
 | ![neovim](screenshots/neovim.png) | ![btop](screenshots/btop.png) |
 | ![power menu](screenshots/powermenu.png) | ![lock screen](screenshots/lockscreen.png) |
+| ![fake fullscreen](screenshots/fake-fullscreen.png) | |
 
 ## What's inside
 
@@ -21,6 +22,7 @@ Everything in it was written for Hyprland 0.56 and its new **Lua** config.
 | Bar | Quickshell | launcher button, workspace pills, clock, tray, network, volume (scroll to change), keybind guide, power |
 | Dock | Quickshell | pinned apps with running indicators, hover zoom |
 | Keybind guide | Quickshell | **Super + /** or the `?` in the bar |
+| Panel toggles | Quickshell + Hyprland | hide the top bar, the dock, or both; **fake fullscreen** keeps the bar, drops the dock and takes windows edge to edge |
 | Launcher | fuzzel | search glyph, clay selection bar, Tela icons; also drives the power menu |
 | Notifications | mako | |
 | Lock / idle | hyprlock, hypridle | locks after 10 minutes |
@@ -66,6 +68,10 @@ chose 2x on the 1080p VM this was built on. Change the `hl.monitor` line to matc
 | `Super` + drag (left / right) | move / resize |
 | `Super` + `1`-`9` | go to workspace |
 | `Super` + `Shift` + `1`-`9` | send window to workspace |
+| `Super` + `T` | top bar on / off |
+| `Super` + `D` | dock on / off |
+| `Super` + `H` | both on / off |
+| `Super` + `Shift` + `F` | fake fullscreen (bar stays, dock hides, no gaps) |
 | `Super` + `/` | keybind guide |
 | volume keys | volume |
 | `Super` + `M` | leave Hyprland |

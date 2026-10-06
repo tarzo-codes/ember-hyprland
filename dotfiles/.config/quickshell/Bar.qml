@@ -14,7 +14,7 @@ PanelWindow {
     margins { top: 10; left: 14; right: 14 }
     implicitHeight: 40
     exclusiveZone: 44
-    color: "transparent"
+    color: "transparent"; visible: Theme.barShown
     WlrLayershell.namespace: "qs-bar"
 
     // a clickable Nerd Font glyph

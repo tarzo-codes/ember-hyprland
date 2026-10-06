@@ -11,7 +11,7 @@ PanelWindow {
     implicitWidth: row.implicitWidth + 28
     implicitHeight: 66
     exclusiveZone: 72
-    color: "transparent"
+    color: "transparent"; visible: Theme.dockShown
     WlrLayershell.namespace: "qs-dock"
 
     property var apps: ["kitty", "firefox", "thunar", "org.xfce.mousepad", "nvim", "btop"]
