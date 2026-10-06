@@ -1,0 +1,9 @@
+#!/bin/sh
+# power menu for the bar's power button
+choice=$(printf 'Lock\nLog out\nReboot\nShut down\n' | fuzzel --dmenu --prompt 'power  ' --placeholder 'what now?' --lines 4 --width 28)
+case "$choice" in
+    Lock) hyprlock ;;
+    "Log out") hyprctl dispatch 'hl.dsp.exit()' ;;
+    Reboot) systemctl reboot ;;
+    "Shut down") systemctl poweroff ;;
+esac

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme id="ember" name="Ember" version="1.0">
+  <author>Claude</author>
+  <description>Ember: warm charcoal, clay, sage and sand</description>
+  <color name="bg" value="#191715"/>
+  <color name="bg2" value="#23201d"/>
+  <color name="sel" value="#3a3530"/>
+  <color name="fg" value="#ece5da"/>
+  <color name="dim" value="#5a524b"/>
+  <color name="clay" value="#d97757"/>
+  <color name="sage" value="#8fae8b"/>
+  <color name="sand" value="#e0b872"/>
+  <color name="blue" value="#7f9cb8"/>
+  <color name="teal" value="#7fb0a8"/>
+  <color name="rose" value="#c48aa8"/>
+
+  <style name="text" foreground="fg" background="bg"/>
+  <style name="selection" foreground="fg" background="sel"/>
+  <style name="cursor" foreground="clay"/>
+  <style name="current-line" background="bg2"/>
+  <style name="line-numbers" foreground="dim" background="bg"/>
+  <style name="current-line-number" foreground="clay" background="bg2"/>
+  <style name="bracket-match" foreground="clay" bold="true"/>
+  <style name="search-match" foreground="bg" background="sand"/>
+
+  <style name="def:comment" foreground="dim" italic="true"/>
+  <style name="def:string" foreground="sage"/>
+  <style name="def:constant" foreground="sand"/>
+  <style name="def:number" foreground="sand"/>
+  <style name="def:keyword" foreground="clay"/>
+  <style name="def:statement" foreground="clay"/>
+  <style name="def:function" foreground="blue"/>
+  <style name="def:type" foreground="teal"/>
+  <style name="def:preprocessor" foreground="rose"/>
+  <style name="def:identifier" foreground="fg"/>
+</style-scheme>
